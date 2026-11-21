@@ -1250,6 +1250,7 @@ def main() -> None:
     app.add_error_handler(error_handler)
 
     print("Liar's Card Game Bot is running...")
+    asyncio.set_event_loop(asyncio.new_event_loop())
     app.run_polling()
 
 
